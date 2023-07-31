@@ -104,10 +104,10 @@ const handleSnippetClick = async (snippetId) => {
   }
 };
 
-//clicking snipped takes to comments page
+//clicking snipped takes to comments page, create button to return
 if (selectedSnippet) {
   return (
-    <div>
+    <div class="container">
       <button onClick={() => setSelectedSnippet(null)}>Back to Snippets</button>
       <SnippetDetails snippet={selectedSnippet} />
       <CommentInput snippetId={selectedSnippet._id} />
